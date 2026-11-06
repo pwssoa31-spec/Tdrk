@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL || 'Https://discord.com/api/webhooks/1550880101913067591/RCo-bz_Oljz7j47B1ajO2YUWA23NuWDWFVBn-hVkwPqTnJNCuTGfD5vMET1-nM1xM8VJ';
+const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL || 'coloque seu hebhook aqui';
 const RENDER_URL = process.env.RENDER_EXTERNAL_URL;
 
 app.get('/ping', (req, res) => res.status(200).send('OK'));
